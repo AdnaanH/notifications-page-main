@@ -11,58 +11,76 @@
   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-    <main>
+    <main class="container">
         <header>
-            <h1>Notifications <span id="unread-number">3</span></h1>
-            <h2 id="mark-read">Mark all as read</h2>
+            <h1>Notifications <span id="notifications">3</span></h1>
+            <p id="mark-read">Mark all as read</p>
         </header>
-        <section>
+
+        <section class="active">
             <img src="./avatar-mark-webber.webp" alt="mark">
-            <p>
-                <span id="user-name">Mark Webber</span>reacted to your recent post<span id="post">My first tournament today!</span><br><span id="time">1m ago</span>
-            </p>
+            <div>
+                <p><span id="user-name">Mark Webber </span>reacted to your recent post <span id="post">My first tournament today!</span></p><br>
+                <h2 id="time">1m ago</h2>
+            </div>            
         </section>
-        <section>
+
+        <section class="active">
             <img src="./avatar-angela-gray.webp" alt="angela">
-            <p>
-                <span id="user-name">Angela Gray</span>followed you<br><span id="time">5m ago</span>
-            </p>
+            <div>
+                <p><span id="user-name">Angela Gray </span>followed you</p><br>
+                <h2 id="time">5m ago</h2>
+            </div>            
         </section>
-        <section>
+
+        <section class="active">
             <img src="./avatar-jacob-thompson.webp" alt="jacob">
-            <p>
-                <span id="user-name">Jacob Thompson</span>has joined your group<span id="group">Chess Club</span><br><span id="time">
-                1 day ago</span>
-            </p>
+            <div>
+                <p><span id="user-name">Jacob Thompson </span>has joined your group <span id="group">Chess Club</span></p><br>
+                <h2 id="time">1 day ago</h2>
+            </div>
         </section>
+
         <section>
-            <img src="./avatar-rizky-hasanuddin.webp" alt="rizky">
-            <p>
-                <span id="user-name">Rizky Hasanuddin</span>sent you a private message><br><span id="time">5 days ago</span>
-            </p>
-            <details>
-                <summary>Hello thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of
-                 fun and improving my game.</summary>
-            </details>
+            <div class="priv-msg">
+            <div class="msg">
+                <img src="./avatar-rizky-hasanuddin.webp" alt="rizky">
+                <div>
+                    <p><span id="user-name">Rizky Hasanuddin </span>sent you a private message</p><br>
+                    <h2 id="time">5 days ago</h2>
+                </div>                   
+            </div>
+            
+            <div class="message">
+                <p>Hello thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p> 
+            </div>                
+            </div>  
         </section>
+
         <section>
             <img src="./avatar-kimberly-smith.webp" alt="Kimberly">
-            <p>
-                <span id="user-name">Kimberly Smith</span>commented on your picture<br><span id="time">1 week ago</span>
-            </p>
+            <div>
+                <div class="comment">
+                    <p><span id="user-name">Kimberly Smith </span>commented on your picture <br></p>
+                    <img src="./image-chess.webp" alt="comment">
+                </div>
+                <h2 id="time">1 week ago</h2>
+            </div>
         </section>
+
         <section>
             <img src="./avatar-nathan-peterson.webp" alt="nathan">
-            <p>
-                <span id="user-name">Nathan Peterson</span>reacted to your recent post<span id="post">5 end-game strategies to increase 
-                your win rate</span><br><span id="time">2 weeks ago</span>
-            </p>
+            <div>
+                <p><span id="user-name">Nathan Peterson </span>reacted to your recent post <span id="post">5 end-game strategies to increase your win rate</span></p><br>
+                <h2 id="time">2 weeks ago</h2>
+            </div>            
         </section>
         <section>
             <img src="./avatar-anna-kim.webp" alt="anna">
-            <p>
-                <span id="user-name">Anna Kim</span>left the group<span id="group">Chess Club</span><br><span id="time">2 weeks ago</span>
-            </p>
+            <div>
+                <p><span id="user-name">Anna Kim </span>left the group <span id="group">Chess Club</span></p><br>
+                <h2 id="time">2 weeks ago</h2>
+            </div>     
         </section>
     </main>
     <script type="text/javascript" src="./script.js"></script>

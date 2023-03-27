@@ -7,25 +7,136 @@ body{
 }
 main{
     min-height: 90vh;
-    width: 30rem;
+    width: 40rem;
     background-color: hsl(0, 0%, 100%);
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 25px;
+    display: grid;
 }
 header{
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 header h1{
     font-family: Plus Jakarta Sans;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: 800;
 }
 header h1 span{
-    font-size: 1.2em;
+    font-size: 0.9em;
     color: hsl(0, 0%, 100%);
     background-color: hsl(219, 85%, 26%);
-    padding: 5px;
+    padding: 2.5px 10px;
     border-radius: 5px;
+}
+header p{
+    color: hsl(219, 14%, 63%);
+    font-size: 0.9em;
+    font-family: Plus Jakarta Sans;
+    font-weight: 600;
+}
+header p:hover{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+section{
+    display: flex;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+section.active{
+    background-color: hsl(211, 68%, 94%);
+    border-radius: 10px;
+}
+section.active p:first-of-type::after{
+    content: "";
+    background-color: red;
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+section img{
+    height: 4em;
+    width: 4em;
+}
+section p{
+    line-height: 20px;
+    color: hsl(219, 14%, 63%);
+    font-family: Plus Jakarta Sans;
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-left: 15px;
+}
+div{
+    line-height: -15px;
+}
+div h2{
+    color: hsl(219, 14%, 63%);
+    font-family: Plus Jakarta Sans;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-top: -30px;
+    padding-left: 15px;
+}
+#user-name{
+    font-weight: 900;
+    color: hsl(224, 21%, 14%);
+}
+#user-name:hover{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+#post{
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+#post:hover{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+#group{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+}
+#group:hover{
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+.msg{
+    display: flex;
+}
+.priv-msg{
+    display: grid;
+}
+.message{
+    margin-left: 75px;
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: hsl(211, 68%, 94%);
+}
+.message:hover{
+    background-color: hsl(205, 33%, 90%);
+    cursor: pointer;
+}
+.message p{
+    font-size: 0.96em;
+    font-weight: 600; 
+}
+.comment{
+    display: flex;
+}
+.comment img{
+    padding-left: 150px;
+}
+@media screen and (max-width:550px){
+    .container{
+        margin: 0;
+    }
 }
