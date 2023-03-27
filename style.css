@@ -1,0 +1,31 @@
+body{
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(218, 37%, 83%);
+    padding: 50px 300px;
+}
+main{
+    min-height: 90vh;
+    width: 30rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    padding: 25px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header h1{
+    font-family: Plus Jakarta Sans;
+    font-size: 1.3em;
+    font-weight: 800;
+}
+header h1 span{
+    font-size: 1.2em;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(219, 85%, 26%);
+    padding: 5px;
+    border-radius: 5px;
+}
